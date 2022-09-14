@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Session 5 Activity</title>
+</head>
+<body>
+
+	<header>
+		<h1>S05 Activity - Patosa</h1>
+		<hr>
+	</header>
+
+	<section style="border-style: solid;	margin: 2em 14em;	padding:2em">
+		<h1> Zuitt IT Solutions </h1>
+		<h3> Products Offered </h3>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Package</th>
+					<th>Price</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> Basic</td>
+					<td> &#8369; 500.00</td>
+					<td> Package includes a fully functional website with desired specifications.</td>
+				</tr>
+				<tr>
+					<td> Premium</td>
+					<td> &#8369; 1000.00</td>
+					<td> Enjoy all the benefits of the basic package and also includes site support and maintenance.</td>
+				</tr>
+			</tbody>
+				
+		</table>
+	</section>
+
+	<section style="border-style: solid;	margin: 2em 14em;	padding:2em">
+		<h1>Contact Form</h1>
+		<form action="">
+			<label for="fname">First Name:</label>						<br>
+			<input type="text" id="fname" required autocomplete>		<br>
+			<label for="lname">Last Name:</label>						<br>
+			<input type="text" id="lname" required autocomplete>		<br>
+			<label for="email">Email:</label>							<br>
+			<input type="email" id="email" required autocomplete>		<br>
+			<label for="contact_num">Contact Number:</label>			<br>
+			<input type="text" id="contact_num" required autocomplete>	<br>
+			<label for="service_type">Service Type:</label>				<br>
+			<!-- dropdown -->
+			<select name="service_type" id="service_type">
+				<option value="none" selected disabled hidden>Select an option</option>
+				<option value="Front-end Programming">Front-end Programming</option>			
+				<option value="Back-end Programming">Back-end Programming</option>			
+				<option value="SQA Testing">Software Quality Assurance Testing</option>			
+			</select>													<br>
+			<!-- checkbox -->
+			<label>Preferred Contact:</label>							<br>
+			<input type="checkbox" name="pref_email" id="pref_email" value="pref_email">
+			<label for="pref_email">Email</label>						<br>
+			<input type="checkbox" name="pref_email" id="pref_email" value="pref_phone">
+			<label for="pref_phone">Preferred Contact:</label>			<br>
+			<!-- radio button -->
+			<label>Package:</label>										<br>
+			<input type="radio" name="package" value="basic" required>
+			<label for="package">Basic</label>							<br>
+			<input type="radio" name="package" value="premium" required>
+			<label for="package">Premium</label>						<br>
+																		<br>
+			<!-- Text Area -->
+			<label for="message">Message</label>						<br>
+			<textarea id="message" cols="30" rows="10"></textarea>
+																		<br>
+
+			<!-- buttons -->
+			<button type="submit">Send Inquiry</button>					<br>
+			<button type="reset">Reset</button>
+		</form>
+	</section>
+
+</body>
+</html>
